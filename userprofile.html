@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="userprofile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header-container">
+                <h1>Profile</h1>
+                <button class="logout-btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="profile-section">
+        <div class="user-info">
+            <div class="user-container">
+                <p class="username">Username</p>
+                <p class="email">user@example.com</p>
+            </div>
+            <div class="wallet-container">
+                <p class="wallet-label">Wallet Balance</p>
+                <p class="wallet-balance">₹1,000</p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <div class="action-item">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <span class="action-text">Deposit</span>
+            
+            </div>
+            <div class="action-item" id="withdrawId">
+                <!-- Wrap the withdraw action in an anchor tag linking to the withdraw page -->
+                <i class="fa-solid fa-arrow-down-long"></i>
+                <span class="action-text">Withdraw</span>
+            </div>
+            <div class="action-item">
+                <i class="fa-solid fa-headphones"></i>
+                <span class="action-text">Customer Support</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="fixed-icons">
+       <a href="home.html"><button class="nav-item">🏠</button></a> 
+        <a href="invite.html"><button class="nav-item">👥</button></a>
+        <button class="nav-item">💰</button>
+        <button class="nav-item">👤</button>
+    </div>
+
+    <script src="userprofile.js"></script>
+</body>
+</html>

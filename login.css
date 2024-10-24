@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+	overflow: hidden;
+}
+
+.container {
+    width: 70%;
+    max-width: 400px;
+    perspective: 1000px;
+    
+}
+
+@keyframes shine {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.7), 0 0 30px rgba(255, 215, 0, 0.7), 0 0 40px rgba(255, 215, 0, 0.7), 0 0 50px rgba(255, 215, 0, 0.7);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 30px rgba(255, 215, 0, 1), 0 0 40px rgba(255, 215, 0, 1), 0 0 50px rgba(255, 215, 0, 1), 0 0 60px rgba(255, 215, 0, 1);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.7), 0 0 30px rgba(255, 215, 0, 0.7), 0 0 40px rgba(255, 215, 0, 0.7), 0 0 50px rgba(255, 215, 0, 0.7);
+    }
+}
+
+.main-title {
+    font-family: 'Dancing Script', cursive; /* Use the new font */
+    color: #FFD700; /* Golden color */
+    text-align: center;
+    font-size: 5rem; /* Increase size */
+    animation: shine 3.0s infinite; /* Add shining animation */
+    margin-bottom: 30px; /* Increase space below the title */
+    margin-top: -300px; /* Move title higher */
+
+}
+
+
+
+@font-face {
+    font-family: 'Playwright England SemiJoined';
+    src: url('fonts/PlaywrightEnglandSemiJoined.woff2') format('woff2'), /* Adjust the path as needed */
+         url('fonts/PlaywrightEnglandSemiJoined.woff') format('woff'); /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-container {
+    width: 100%;
+    position: relative;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.form {
+    background-color: rgba(26, 26, 26, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+h1 {
+    color: #FFD700; /* Golden color */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    background-color: #444;
+    border: 2px solid #FFD700; /* Golden border on focus */
+}
+
+label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #ffffff;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #FFD700;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFD700; /* Golden button */
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e6c700; /* Darker golden on hover */
+}
+
+.message {
+    color: #ffcc00;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.toggle-form {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.toggle-form span {
+    color: #FFD700;
+    cursor: pointer;
+}
+
+.toggle-form span:hover {
+    text-decoration: underline;
+}
+
+#register-form {
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BetPilot</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="header-title">BET PILOT</h1> <!-- Added Bet Pilot Text to Header -->
+      <button class="wallet-button">💰</button> <!-- Wallet Icon -->
+    </nav>
+  </header>
+
+  <!-- Application Image Section -->
+  <section class="app-image-section">
+    <div class="app-image-container">
+      <img src="BET Plane (1).png" alt="Our Application" class="app-image">
+    </div>
+  </section>
+
+  <!-- Image Gallery Section -->
+  <section class="image-section">
+    <h2>Live Games</h2>
+    <div class="images">
+      <a href="colorgame.html"><div class="image-container">
+        <img src="https://images.unsplash.com/photo-1655159428752-c700435e9983?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1">
+      </div></a>
+      <div class="image-container">
+        <img src="https://cdn.pixabay.com/photo/2015/07/10/11/11/luck-839037_640.jpg" alt="Image 2">
+      </div>
+      <a href="contest.html">	
+        <div class="image-container">
+          <img src="https://www.skrill.com/fileadmin/Personal/Skrill_News/Gaming/Different_types_of_games/03_-_800x600_-_Different_types_of_games.jpg" alt="Image 3">
+        </div>
+      </a>
+      <div class="image-container">
+        <img src="https://www.webtechpulse.com/wp-content/uploads/2022/04/online-slot.jpg" alt="Image 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- Wallet Modal -->
+  <div class="modal" id="walletModal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>💰 Wallet</h2>
+        <p id="balance">Balance: <span class="balance-amount">₹0.00</span></p>
+        <div class="button-container">
+            <button id="recharge">Recharge</button>
+            <button id="withdraw">Withdraw</button>
+        </div>
+    </div>
+  </div>
+
+  <!-- Recharge Popup -->
+  <div class="modal" id="rechargeModal">
+    <div class="modal-content">
+        <span class="close" id="closeRechargeModal">&times;</span>
+        <h2>Recharge</h2>
+        <div class="qr-container">
+            <img src="path/to/your/qr-code.png" alt="QR Code" class="qr-code">
+            <p>UPI ID: <span class="upi-id">yourupiid@bank</span></p>
+        </div>
+    </div>
+  </div>
+
+  <footer>
+    <p></p>
+  </footer>
+
+  <div class="fixed-icons">
+    <button class="nav-item">🏠</button>
+    <a href="invite.html"><button class="nav-item">👥</button></a>
+    <a href="mycontest.html"><button class="nav-item">🏆</button></a>
+    <a href="userprofile.html"><button class="nav-item">👤</button></a>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>

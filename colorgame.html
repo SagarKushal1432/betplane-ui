@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Betting Game</title>
+    <link rel="stylesheet" href="colorgame.css">
+</head>
+<body>
+    <header>
+        <h2>Bet Pilot</h2>
+    </header>
+
+    <main>
+        <section class="game-section">
+            <h1>COLOR BALL GAME</h1>
+            <div class="ball-container">
+                <div class="ball blue-ball" onclick="selectBall('Blue')">
+                    <span class="ball-text">1.9x</span>
+                </div>
+                <div class="ball green-ball" onclick="selectBall('Green')">
+                    <span class="ball-text">1.9x</span>
+                </div>
+                <div class="ball purple-ball" onclick="selectBall('Purple')">
+                    <span class="ball-text">5x</span>
+                </div>
+            </div>
+            <div class="selected-ball-message">
+                <p>You selected: <span id="selected-ball">None</span></p>
+            </div>
+        </section>
+
+        <section class="leaderboard">
+            <header>
+                <h2>Leaderboard</h2>
+            </header>
+
+            <div class="tabs">
+                <button id="myHistoryTab" class="tab active">My History</button>
+                <button id="previousResultsTab" class="tab">Previous Results</button>
+            </div>
+
+            <div id="myHistory" class="tab-content active">
+                <h3>My History</h3>
+                <table id="myHistoryTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Ball Color</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- My history data will be dynamically injected here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="previousResults" class="tab-content">
+                <h3>Previous Results</h3>
+                <table id="previousResultsTable">
+                    <thead>
+                        <tr>
+                            <th>Date & Time</th>
+                            <th>Ball Color</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Previous results data will be dynamically injected here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Popup for selecting ball and entering amount -->
+    <div id="bet-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>You selected: <span id="popup-selected-ball">None</span></p>
+            <div class="amount-container">
+                <button onclick="changeAmount(-1)">&#8722;</button>
+                <input type="number" id="bet-amount" value="0" min="0" />
+                <button onclick="changeAmount(1)">&#43;</button>
+            </div>
+            <button id="confirm-bet-button" onclick="confirmBet()">Place Bet</button>
+        </div>
+    </div>
+
+    <script src="colorgame.js"></script>
+</body>
+</html>
