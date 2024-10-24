@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="withdraw.css"> <!-- Link to your existing CSS -->
+    <title>Withdraw</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="header-title">BET PILOT</h1>
+            <button class="wallet-button"><i class="fa-solid fa-wallet"></i> ₹0.00</button>
+        </nav>
+    </header>
+
+    <div class="withdraw-container">
+        <h2>WITHDRAW</h2>
+        <form class="withdraw-form">
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="200~50000" required>
+            </div>
+            <div class="form-group">
+                <label for="account-number">Bank Account Number</label>
+                <input type="text" id="account-number" placeholder="Enter account number" required>
+            </div>
+            <div class="form-group">
+                <label for="ifsc-code">IFSC Code</label>
+                <input type="text" id="ifsc-code" placeholder="Enter IFSC code" required>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="fixed-icons">
+            <button class="nav-item"><i class="fa-solid fa-home"></i></button>
+            <button class="nav-item"><i class="fa-solid fa-users"></i></button>
+            <button class="nav-item"><i class="fa-solid fa-list"></i></button>
+            <button class="nav-item"><i class="fa-solid fa-user"></i></button>
+        </div>
+    </footer>
+
+</body>
+</html>

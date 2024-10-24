@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deposit.css"> <!-- Link to your CSS -->
+    <title>Deposit</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="header-title">BET PILOT</h1>
+            <button class="wallet-button"><i class="fa-solid fa-wallet"></i> ₹0.00</button>
+        </nav>
+    </header>
+
+    <div class="deposit-container">
+        <h2>DEPOSIT</h2>
+        <div class="qr-code">
+            <img src="Qrcode.png" alt="QR Code" class="qr-image">
+        </div>
+        <ul class="deposit-instructions">
+            <li>Minimum deposit is ₹100.</li>
+            <li>Scan QR code to recharge.</li>
+            <li>After Payment Enter UTR/Reference No. and click on submit.</li>
+        </ul>
+
+        <form class="utr-form">
+            <div class="form-group">
+                <label for="utr-number">UTR/Reference No.</label>
+                <input type="text" id="utr-number" placeholder="Enter UTR/Reference No." required>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>
