@@ -46,7 +46,7 @@ h1 {
     border: 2px solid transparent;
     background-clip: padding-box;
     animation: glow 1.5s infinite alternate; /* Glow animation */
-    text-shadow: 0 0 1px gold, 0 0 10px gold, 0 0 15px gold; /* Glowing effect */
+    text-shadow: 0 0 100px gold, 0 0 0px gold, 0 0 0px gold; /* Glowing effect */
 }
 
 /* Add glow effect on hover */
