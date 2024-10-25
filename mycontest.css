@@ -31,27 +31,33 @@ h1 {
 /* Game Title Styles */
 .game-title {
     background: linear-gradient(135deg, #222, #333);
-    color: #fff;
+    color: gold; /* Change text color to gold */
     padding: 20px;
     font-size: 1.8rem;
     cursor: pointer;
     margin-bottom: 15px;
     border-radius: 10px;
     position: relative;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
     border: 2px solid transparent;
     background-clip: padding-box;
+    animation: glow 1.5s infinite alternate; /* Glow animation */
+    text-shadow: 0 0 1px gold, 0 0 10px gold, 0 0 15px gold; /* Glowing effect */
 }
 
+/* Add glow effect on hover */
 .game-title:hover {
     background: linear-gradient(135deg, #333, #444);
-    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.6);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.4);
     border: 2px solid gold;
+    transform: translateY(-5px); /* Lift effect */
 }
+
+
 
 .game-title .icon {
     transition: transform 0.5s ease;
